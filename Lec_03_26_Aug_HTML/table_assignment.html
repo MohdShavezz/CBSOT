@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table {
+            width: 50%;
+            height: 50vh;
+        } */
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>Table</h2>
+    <p>this is good table</p>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <table style="width: 50%;height: 50vh">
+        <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>            
+            <td></td>
+            <td colspan="2">4</td>
+            <td colspan="2">6</td>
+        </tr>
+        <tr>
+            <td>Mon</td>
+            <td>C++</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td rowspan="5" style="writing-mode: vertical-rl; text-orientation: upright;">break</td>
+            <td colspan="2">Java</td>
+            <td colspan="2">C++</td>
+            
+        </tr>
+        <tr>
+            <td>Tue</td>
+            <td rowspan="3">Hindi</td>
+            <td colspan="2">Web Dev</td>
+            <td>C++</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td rowspan="2">OS</td>
+        </tr>
+
+        <tr>
+            <td>Wed</td>
+            <td colspan="2">C++</td>
+            <td colspan="3">Django</td>
+        </tr>
+        <tr>
+            <td>Thur</td>
+            <td colspan="2">Java</td>
+            <td>Eng</td>
+            <td>Go</td>
+            <td colspan="2">Networks</td>
+        </tr>
+        <tr>
+            <td>Fri</td>
+            <td colspan="3">Data Science</td>
+            <td colspan="2">C++</td>
+            <td>Go</td>
+            <td>Python</td>
+        </tr>
+    </table>
+</body>
+
+</html>
