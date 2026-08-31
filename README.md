@@ -1,2 +1,2 @@
 ONENOTE LINK:
-https://onedrive.live.com/personal/7f036de033caac6e/_layouts/15/Doc.aspx?sourcedoc={5c062566-3f05-4925-bcb8-1985a54cc9e2}&action=edit&redeem=aHR0cHM6Ly8xZHJ2Lm1zL28vYy83ZjAzNmRlMDMzY2FhYzZlL0lnQm1KUVpjQlQ4bFNieTRHWVdsVE1uaUFUbVBtOFFyVllJRHZwa1BrYlVOWDlZP2U9YVY1QzVl&wd=target%28Quick%20Notes.one%7Cd6ab6311-1cd3-4f22-8cf4-ad1673d5773b%2FLec_01_24_08_Intro_%7Cccd08a38-250c-4cf1-8502-ab6e8f166e6c%2F%29&wdorigin=NavigationUrl
+https://1drv.ms/o/c/7f036de033caac6e/IgBmJQZcBT8lSby4GYWlTMniATmPm8QrVYIDvpkPkbUNX9Y
