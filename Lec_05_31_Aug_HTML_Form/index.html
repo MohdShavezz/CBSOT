@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>HTML FORM</h2>
+    <form action="#">
+        <label for="ppp">Name</label>
+        <input id="ppp" name="name" value="" placeholder="Enter your name" type="text">
+        <br>
+        <label for="age">Age</label>
+        <input id="age" name="age" value="" placeholder="Age" type="number" min="18" max="99">
+
+        <br>
+        <label for="email">Email</label>
+        <input id="email" name="email" value="" placeholder="Enter your email" type="email">
+        <br>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" value="" placeholder="Enter your password" type="password">
+        <br>
+
+        <label for="dob">Date of Birth</label>
+        <input id="dob" name="dob" value="" placeholder="Enter your date of birth" type="date">
+        <br>
+
+        <label>Choose a Gender</label>
+        <input name="gender" value="male" type="radio">
+        <label for="male">Male</label>
+        <input name="gender" value="female" type="radio">
+        <label for="female">Female</label>
+        <input name="gender" value="other" type="radio">
+        <label for="other">Other</label>
+
+        <br>
+        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike
+        <input type="checkbox" name="vehicle2" value="Car"> I have a car
+        <input type="checkbox" name="vehicle3" value="Truck"> I have a truck
+        <br>
+
+        <input type="file" accept=".jpg, .jpeg, .png" name="myfile">
+        <br>
+        <label>Select Value:</label>
+        <!-- The slider -->
+        <input type="range" min="0" max="100" value="0" name="myRange"
+            oninput="this.nextElementSibling.value = this.value">
+        <output>0</output>
+
+        <br>
+        <!-- DROP DOWN -->
+        <label>Choose a car:</label>
+        <select name="cars" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br>
+
+        <!-- DATALIST -->
+        <label>Choose a browser from the list:</label>
+        <input list="pp" name="browser">
+        <datalist id="pp">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="apple">
+            <option value="apite">
+        </datalist>
+        <br>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+        </fieldset>
+        <button>SUBMIT</button>
+    </form>
+</body>
+
+</html>
