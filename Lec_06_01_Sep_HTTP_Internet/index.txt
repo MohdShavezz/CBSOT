@@ -1,0 +1,219 @@
+HTML MCQs – Easy, Medium & Hard
+
+EASY – 10 QUESTIONS
+
+1. What does HTML stand for?
+A. Hyper Text Markup Language
+B. High Text Machine Language
+C. Hyperlink Text Management Language
+D. Home Tool Markup Language
+
+
+2. Which declaration is used to specify HTML5?
+A. <html5>
+B. <!DOCTYPE html>
+C. <doctype html5>
+D. <version html5>
+
+
+3. Which tag is the root element of an HTML document?
+A. <head>
+B. <body>
+C. <html>
+D. <root>
+
+
+4. Which tag is used for the largest heading?
+A. <h6>
+B. <h1>
+C. <heading>
+D. <head>
+
+
+5. Which tag is used to create a paragraph?
+A. <para>
+B. <p>
+C. <text>
+D. <paragraph>
+
+
+6. Which tag creates an unordered list?
+A. <ol>
+B. <ul>
+C. <li>
+D. <list>
+
+
+7. Which tag is used to create a hyperlink?
+A. <link>
+B. <a>
+C. <href>
+D. <url>
+
+
+8. Which attribute specifies the destination of a hyperlink?
+A. src
+B. link
+C. href
+D. target
+
+
+9. Which tag is used to display an image?
+A. <image>
+B. <img>
+C. <pic>
+D. <src>
+
+
+10. Where is the <title> tag normally placed?
+A. Inside <body>
+B. Inside <head>
+C. Inside <html> after <body>
+D. Inside <footer>
+
+
+
+MEDIUM – 10 QUESTIONS
+
+11. Which of the following is an example of a block-level element?
+A. <span>
+B. <a>
+C. <div>
+D. <strong>
+
+
+12. Which element is generally an inline element?
+A. <p>
+B. <div>
+C. <h1>
+D. <span>
+
+
+13. Which tag defines an ordered list?
+A. <ul>
+B. <ol>
+C. <li>
+D. <dl>
+
+
+14. Which tags are used for a description list?
+A. <ul> and <li>
+B. <ol> and <li>
+C. <dl>, <dt> and <dd>
+D. <table>, <tr> and <td>
+
+
+15. Which HTML element represents a table row?
+A. <td>
+B. <th>
+C. <tr>
+D. <row>
+
+
+16. Which attribute can be used to make a table cell span multiple columns?
+A. rowspan
+B. colspan
+C. spanrow
+D. colmerge
+
+
+17. Which tag is used to connect an external CSS file to an HTML document?
+A. <style>
+B. <css>
+C. <script>
+D. <link>
+
+
+18. Which tag is commonly used to provide a favicon?
+A. <link>
+B. <favicon>
+C. <icon>
+D. <img>
+
+
+19. Which HTML element can be used to embed another webpage inside the current webpage?
+A. <embedpage>
+B. <iframe>
+C. <framepage>
+D. <web>
+
+
+20. What is the main purpose of meta tags related to SEO?
+A. To create tables
+B. To provide information about a page to browsers and search engines
+C. To add images
+D. To create hyperlinks
+
+
+
+HARD – 10 QUESTIONS
+
+21. Which statement correctly describes the DOM?
+A. It is a database used by HTML.
+B. It is a programming language used to style HTML.
+C. It represents an HTML document as a tree of objects that scripts and browser tools can inspect and modify.
+D. It is a replacement for HTML.
+
+
+22. What is the correct structure of a basic HTML document?
+A. <html><body><head></head></body></html>
+B. <!DOCTYPE html><html><head></head><body></body></html>
+C. <!HTML><document><body></body></document>
+D. <doctype><html><body><head></head></body></html>
+
+
+23. What is the difference between rowspan and colspan?
+A. rowspan combines rows, while colspan combines columns.
+B. rowspan combines columns, while colspan combines rows.
+C. Both combine only rows.
+D. Both combine only columns.
+
+
+24. Which hyperlink correctly opens a page named about.html?
+A. <a src="about.html">About</a>
+B. <a href="about.html">About</a>
+C. <link href="about.html">About</link>
+D. <a url="about.html">About</a>
+
+
+25. Which attribute is commonly used to provide alternative text for an image?
+A. title
+B. alt
+C. text
+D. description
+
+
+26. Which option correctly describes the purpose of the target="_blank" attribute value?
+A. Opens the linked document in a new browsing context, commonly a new tab.
+B. Downloads the linked document automatically.
+C. Makes the link invisible.
+D. Opens the link inside the <head>.
+
+
+27. Which statement about HTML attributes is correct?
+A. Attributes provide additional information or configuration for an HTML element.
+B. Attributes can only be used with headings.
+C. Every attribute must appear inside <body>.
+D. Attributes replace HTML tags.
+
+
+28. Which HTML version introduced the modern HTML5 doctype <!DOCTYPE html>?
+A. HTML 2.0
+B. HTML 3.2
+C. HTML 4.01
+D. HTML5
+
+
+29. Which combination is most appropriate for basic SEO information in an HTML document?
+A. <meta name="description"> and a meaningful <title>
+B. <img> and <iframe>
+C. <table> and <tr>
+D. <br> and <hr>
+
+
+30. A developer wants to inspect an element, view its DOM structure, and check its attributes in a browser. Which tool is most appropriate?
+A. File Explorer
+B. Browser Developer Tools / Inspect Element (CTRL+SHIFT+I)
+C. Command Prompt
+D. HTML Validator only
+
