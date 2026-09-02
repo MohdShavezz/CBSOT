@@ -1,0 +1,36 @@
+h2{
+    background-color: green;
+}
+/* Red, Green, and Blue  */
+/* p{
+    background-color:rgb(1, 255, 73); 
+} */
+/* Red, Green, and Blue A */
+/* p{
+    background-color:rgb(1, 255, 71,0.5);
+} */
+/* p{
+    background-color: #FF5733;
+} */
+/* HSL */
+/* p{
+    background-color: hsl(0, 100%, 50%);
+} */
+
+div{
+    /* background-color: beige; */
+    /* background-image: linear-gradient(to right, red, yellow); */
+    height: 444px;
+    /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/96/Logo-warga-200x200.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original");
+    background-size: contain; */
+}
+div span{
+    background-color: blue;
+}
+
+.vdo{
+        width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1
+}
