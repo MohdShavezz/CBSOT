@@ -1,0 +1,8 @@
+nav{
+    background-color: yellow;
+    padding: 1rem;
+}
+nav div{
+    width: 100px;
+    border: 1px solid red;
+}
