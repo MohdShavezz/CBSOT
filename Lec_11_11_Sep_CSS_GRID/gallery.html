@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        section div{
+            border: 1px solid red;
+        }
+        #header{
+            grid-column: span 5;
+        }
+        #content-1{
+            grid-column: span 4;
+        }
+        #content-2, #content-3{
+            grid-column: span 2;
+        }
+        #sidebar{
+            grid-row: span 2;
+        }
+        #footer{
+            grid-column: span 5;
+        }
+    </style>
+</head>
+<body>
+    <h2>Gallery</h2>
+    <section>
+        <div id="header">Header</div>
+        <div id="sidebar">Side-bar</div>
+        <div id="content-1">Content 1</div>
+        <div id="content-2">Content 2</div>
+        <div id="content-3">Content 3</div>
+        <div id="footer">Footer</div>
+    </section>
+</body>
+</html>

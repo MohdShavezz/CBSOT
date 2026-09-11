@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            background: yellow;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1rem;
+            padding: .5rem;
+            /* text-align: center; */
+            grid-template-areas: 
+            "box-1 box-1 box-2 box-3"
+            "box-1 box-1 box-2 box-4";
+        }
+        section div{
+            border: 1px solid;
+            display:  flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #one{
+            display: flex;
+            align-self: self-start;
+            /* height: 2rem; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>CSS GRID Layout</h2>
+
+    <section>
+        <div style="grid-area: box-1;" id="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde officiis blanditiis recusandae ullam quae volupta?</div>
+        <div style="grid-area: box-2;">2</div>
+        <div style="grid-area: box-3;">3</div>
+        <div style="grid-area: box-4;">4</div>
+        <!-- <div style="grid-area: box-5;">5</div> -->
+    </section>
+</body>
+
+</html>
