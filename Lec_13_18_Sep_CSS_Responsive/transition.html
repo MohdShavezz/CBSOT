@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 100%;
+            background: yellow;
+            height: 50vh;
+            display: grid;
+            place-content: center;
+        }
+
+        .box {
+            background-color: red;
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .box:hover {
+            transition: transform 0.5s ease;
+            /* transform: translate(10px,10px); */
+            /* transform: scale(2);
+            transform: rotate(20deg); */
+            transform: skew(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Transition</h2>
+    <div class="parent">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

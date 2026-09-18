@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 100%;
+            background: yellow;
+            height: 50vh;
+            /* display: grid;
+            place-content: center; */
+        }
+
+        .box {
+            background-color: red;
+            height: 3rem;
+            width: 3rem;
+            animation: yourAnimation 4s ease infinite;
+        }
+
+        @keyframes yourAnimation {
+
+            /* from{
+                background-color: blue;
+            }
+            to{
+                background-color: aqua;
+            } */
+            0% {
+                transform: translate(10rem, 0);
+            }
+
+            25% {
+                transform: translate(10rem, 10rem);
+            }
+
+            50% {
+                transform: translate(0, 10rem);
+
+            }
+
+            75% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(10rem, 0);
+
+            }
+        }
+
+        .heart {
+            width: 100%;
+            text-align: center;
+            animation: pump 2s ease infinite;
+        }
+        .heart img{
+            width: 5rem;
+            height: 5rem;
+        }
+
+        @keyframes pump {
+            /* from {
+                transform: scale(2);
+            }
+            to {                
+                transform: scale(.5);
+            } */
+
+            0%,100%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Animation</h2>
+    <div class="parent">
+        <div class="box"></div>
+    </div>
+
+    <h2>heart</h2>
+    <div class="heart">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ctXlEwAXLvBlfhoFvSknL54t8__L951e1cpWuhJ5nA&s"
+            alt="">
+    </div>
+</body>
+
+</html>
