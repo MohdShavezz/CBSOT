@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+
+    z-index: 10;
+}
+
+nav .left img {
+    height: 1.5rem;
+}
+
+#hamberger {
+    display: none;
+}
+
+nav .right {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .right a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.commonBtn {
+    /* background-color: #6d4cb1; */
+    padding: 8px 20px;
+    border: 1px solid #6d4cb1;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+}
+
+#login {
+    margin-left: .5rem;
+    border: 1px solid #6d4cb1;
+    color: black;
+}
+
+#signup {
+    background-color: #6d4cb1;
+    margin-right: 2rem;
+}
+
+/* NAVBAR END */
+
+
+/* LANDING PAGE START  */
+section {
+    display: flex;
+    padding: 2rem;
+    padding-top: 5rem;
+    background-color: #6d4cb1;
+    clip-path: ellipse(171% 100% at 79% 0%);
+    position: relative;
+    height: 100vh;
+}
+
+section .left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    padding: 0 4rem;
+    gap: 1rem;
+
+}
+
+section .right {
+    flex: 1;
+}
+
+section .right img {
+    height: 20rem;
+}
+
+#getstartedbutton {
+    background-color: white;
+    color: #6d4cb1;
+    font-weight: bolder;
+    width: 8rem;
+    border-radius: 5px;
+    height: 2.5rem;
+}
+
+/* LANDING PAGE END  */
+
+#yellow-bbl {
+    background: yellow;
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+    position: absolute;
+    left: -4.5rem;
+    top: 11rem;
+}
+
+#grey-bbl {
+    background: rgb(154, 154, 153);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 16px;
+    top: 10rem;
+    z-index: 10;
+}
+
+#box {
+
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 5px solid rgb(170, 220, 20);
+    position: absolute;
+    right: -10rem;
+    top: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav .right a,
+    section .right img {
+        display: none;
+    }
+
+    #grey-bbl,
+    #yellow-bbl,
+    #box {
+        display: none;
+    }
+
+    section .right {
+        flex: none;
+    }
+
+    section .left {
+        padding: 0 2rem;
+    }
+
+    #hamberger {
+        display: block;
+    }
+
+    nav .left img {
+        display: none;
+    }
+}
