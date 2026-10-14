@@ -79,3 +79,7 @@ if(a>b){
 a=6;
 b=10;
 a>b ? console.log('a is big') : false ? console.log('2'):console.log('3')
+
+
+
+
