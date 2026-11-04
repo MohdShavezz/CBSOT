@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4a90e2;
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #357abd;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f4f6f9;
+    border-radius: 6px;
+}
+    </style>
+</head>
+
+<body>
+   
+
+    <form onsubmit="handleSubmit(event)">
+         <h2>FORM Handling</h2>
+        Name: <input type="text" placeholder="name" name="name" id="name">
+        Hobby: <input type="text" id="hobby" placeholder="hobby">
+        Age: <input type="number" placeholder="age" name="age" id="age">
+
+        <br>
+        <button>submit</button>
+
+
+        <br> <br>
+        <div id="output">
+            <!-- <p id="name_output">name</p>
+            <p id="hobby_output">hobby</p>
+            <p id="age_output">3</p> -->
+        </div>
+    </form>
+
+    <script>
+        // function myFunction(e) {
+        //     console.log('Inline value:', e);
+        // }
+        // document.getElementById('name').addEventListener('change', (event) => {
+        //     console.log('Value changed to:', event.target.value);
+        // });
+
+        function handleSubmit(e) {
+            e.preventDefault();//page reload prevent
+            let name = document.getElementById('name').value
+            let hobby = document.getElementById('hobby').value
+            let age = document.getElementById('age').value
+
+
+            //validation 
+            if (name == '' || hobby == '' || age == '') {
+                alert('name and hobby is required...')
+                return
+            }
+
+            // document.getElementById('name').value=''
+            // document.getElementById('hobby').value=''
+            // document.getElementById('age').value=''
+            document.querySelector('form').reset()
+
+            console.log(name, hobby, age)
+            let ouput=document.querySelector('#output')
+            let name_p= document.createElement('p')
+            let hobby_p= document.createElement('p')
+            let age_p= document.createElement('p')
+            name_p.innerText=name;
+            hobby_p.innerText=hobby;
+            age_p.innerText=age;
+            ouput.appendChild(name_p)
+            ouput.appendChild(hobby_p)
+            ouput.appendChild(age_p)
+
+        }
+    </script>
+</body>
+
+</html>

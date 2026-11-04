@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid;
+            padding: .5rem;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Propogation</h2>
+    <div id="grand-parent">
+        <h3>grand-parent</h3>
+        <div id="parent">
+            <h3>parent</h3>
+            <div id="child">
+                <h3>child</h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h2>Event Delegation</h2>
+    <ul id="list">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+    <script>
+        //EVENT PROPOGATION
+        //event bubbling : child > parent > grand-parent
+        // document.getElementById('grand-parent').addEventListener('click',()=>{
+        //     console.log('grand-parent..')
+        // })
+        // document.getElementById('parent').addEventListener('click',()=>{
+        //     console.log('parent..')
+        // })
+        // document.getElementById('child').addEventListener('click',()=>{
+        //     console.log('child..')
+        // })
+
+        //event capturing : grand-parent > parent > child
+          document.getElementById('grand-parent').addEventListener('click',()=>{
+            console.log('grand-parent..')
+        },true)
+        document.getElementById('parent').addEventListener('click',()=>{
+            console.log('parent..')
+        },true)
+        document.getElementById('child').addEventListener('click',()=>{
+            console.log('child..')
+        },true)
+
+        //EVENT DELEGATION
+        let list=document.getElementById('list')
+        list.addEventListener('click',(e)=>{
+            // console.log(e.target) // ELEMENT
+            // console.log(e.target.nodeName) //LI
+            console.log(e.target.innerText) // VALUE            
+        })
+    </script>
+</body>
+</html>

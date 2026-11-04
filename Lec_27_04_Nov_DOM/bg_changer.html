@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-yellow{
+            background-color: yellow;
+        }
+        .img-fluid{
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>BG Changer</h2>    
+    <button id="red-btn" onclick="changeColor('red')">red</button>
+    <button id="green-btn" onclick="changeColor('green')">green</button>
+    <button id="blue-btn" onclick="changeColor('blue')">blue</button>
+    <button id="pink" onclick="changeColor('pink')">pink</button>
+
+    <br>
+    <br>
+    <button id="img-tag">create img tag</button>
+    <div id="render-img">
+
+    </div>
+
+    <script>
+        // let red_btn=document.getElementById('red-btn')
+        // red_btn.addEventListener('click',()=>{
+        //     document.body.style.backgroundColor='red'
+        // })
+        function changeColor(clr){
+           document.body.style.backgroundColor=clr
+        }
+
+        //add and remove attrubutes
+        let h2=document.querySelector('h2')
+        h2.setAttribute('class','bg-yellow')
+        h2.setAttribute('id','h2-id')
+
+        //create img dynamically and add src attribute 
+        //https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=
+        document.querySelector('#img-tag').addEventListener('click',()=>{
+            let img=document.createElement('img')
+            img.classList.add('img-fluid')
+            img.setAttribute('src','https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=')
+            document.getElementById('render-img').appendChild(img)
+            // img.removeAttribute
+            // console.log(img.hasAttribute('id'))
+        })
+    </script>
+</body>
+</html>
