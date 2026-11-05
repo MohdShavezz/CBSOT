@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>TODO</h2>
+    <form onsubmit="addTodo(event)" >
+        <input type="text" name="todo" id="todo" placeholder="enter todo">
+        <button>submit</button> 
+    </form>
+
+    <h3>render todos:</h3>
+    <div id="render-todo">
+        <!-- <p>todo content1</p>
+        <p>todo content2</p> -->
+    </div>
+
+    <script>
+        let todos=[
+            // {id:1,text:'todo content1'},
+            // {id:2,text:'asdf'},
+        ]
+        let todos_local=JSON.parse(localStorage.getItem(todos))
+        function addTodo(e){
+            e.preventDefault() 
+            let todo=document.getElementById('todo').value 
+            if(todo==''){
+                alert('empty value') 
+                return
+            }
+            let todo_capacity=todos.length 
+            let new_id=todo_capacity+1
+            todos.push({id:new_id,text:todo})
+            localStorage.removeItem('todos')
+            localStorage.setItem('todos',JSON.stringify(todos))
+            console.log(todos)
+
+            renderTodos(todos)
+        }
+
+        function renderTodos(todos){
+            todos=JSON.parse(localStorage.getItem('todos'))
+            let render_todo_div=document.getElementById('render-todo')
+            render_todo_div.innerText=''
+            todos.forEach(ele => {
+                let p=document.createElement('p')
+                p.innerText=ele.text
+                render_todo_div.appendChild(p)
+            });
+        }
+        renderTodos(todos_local)
+    </script>
+
+</body>
+</html>
