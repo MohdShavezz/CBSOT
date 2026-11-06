@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>FETCH API:</h2>
+    <div id="output">
+        <!-- <ul>
+        <li>1 - delectus aut autem</li>
+        <li>2 - quis ut nam facilis et officia qui</li>
+    </ul> -->
+    </div>
+
+    <script>
+
+        // method 1
+        // async function fetchTodos() {
+        //     try {
+        //         let todos = await fetch('https://jsonplaceholder.typicode.com/todos')
+        //         let data = await todos.json()
+        //         console.log(data)
+        //         let output = document.getElementById('output')
+        //         output.innerHTML = data.map(todo => `
+        //         <li>${todo.id} - ${todo.title}</li>
+        //     `).join('')
+        //     } catch (error) {
+        //         console.log(error)
+        //     }
+        // }
+        // fetchTodos()
+
+        //method 2
+        fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(data => {
+                return data.json()
+            }).then(data => {
+                console.log(data)
+                let output = document.getElementById('output')
+                output.innerHTML = data.map(todo => `
+                <li>${todo.id} - ${todo.title}</li>
+            `).join('')
+            }).catch(err=>console.log(err))
+    </script>
+
+</body>
+
+</html>
