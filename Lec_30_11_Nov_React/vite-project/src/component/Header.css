@@ -1,0 +1,15 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+nav .left{
+
+}
+nav .right{
+    display: flex;
+    gap: 1rem;
+}
