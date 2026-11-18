@@ -1,0 +1,46 @@
+
+#parent {
+    max-width: 350px;
+    margin: 80px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.point {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+#parent button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#parent button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+#parent button:active {
+    transform: scale(0.95);
+}
